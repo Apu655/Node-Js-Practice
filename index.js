@@ -8,10 +8,11 @@ school.on("bellRing",()=>{
     console.log("This is triggered from school object class")
 })
 school.emit("bellRing")
-// emitter.on("bellRing",()=>{
-//     console.log("Event is triggered")
-// })
+emitter.on("bellRing",()=>{
+    console.log("Event is triggered")
+    console.log("Something new has been added lets try if it works")
+})
 
 // // Raise an event
 
-// emitter.emit("bellRing")
+emitter.emit("bellRing")
